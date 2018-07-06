@@ -1,0 +1,142 @@
+<!--
+ID:19188629
+Name:Abdul Rafay
+Practical Time: Thursday(1:00PM - 3:00 PM)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marriage Certificate</title>
+  <link rel="stylesheet" href="MarriageCert.css">
+</head>
+<body>
+<h2> MARRIAGE CERTIFICATE APPLICATION FORM </h2>
+<h4>Payment details over the page - you MUST return pages 1 and 2 if applying via mail </h4>
+
+<form method="post" action="http://TL28serv.westernsydney.edu.au/twainfo/form.asp">
+<div>
+    <div class="instruction">Fees subject to change without notice</div>
+    <div class="items">
+    <div class="item1">
+        <div class="input"><input class="check0" type="checkbox" name="marriageCertificate"/> </div>
+        <div class="title"><b>MARRIAGE CERTIFICATE</b></div>
+        <div class="cost"><b>$49.00</b></div>
+        <div class="titleInstruction">(Fees include regular postal delivery. If Registered Post or Express Post is
+required, please enclose a self-addressed Registered or Express Post envelope)
+    </div>
+        
+    </div>
+    <div class="item1">
+        <div class="input"><input class="check0" type="checkbox" name="priorityFee"/> </div>
+        <div class="title"><b>PRIORITY FEE *</b></div>
+        <div class="cost"><b>$34.00</b></div>
+        <div class="titleInstruction">(Payable in addition to Marriage Certificate fee & includes priority postal delivery.
+            <b>Does not</b> include Registered Post or Express Post – see exception above).
+    </div>
+    </div>
+    <div class="item1">
+        <div class="input"><input class="check0" type="checkbox" name="marriageCertificateReduceFee"/> </div>
+        <div class="title"><b>MARRIAGE CERTIFICATE</b> (Reduced fee)</div>
+        <div class="cost"><b>$35.00</b></div>
+        <div class="titleInstruction">(Only applies for marriages more than 75 years old. Otherwise full fee applies)
+    </div>
+    </div>
+    </div>
+    <div class="instruction">* Priority fee is payable for 24 hour processing if applying via mail or certain Regional Courthouses. Does not include postage delivery time.
+See Locations & Links webpage. For eligibility see the Marriage certificate access policy on the Marriages webpage.</div>
+
+
+<h2>Identification and Certificate Access Requirements</h2>
+<p>See page 2 or visit www.bdm.justice.wa.gov.au</p>
+
+<h2>Processing Times for Mailed Certificate Applications</h2>
+<p> <b>Standard </b>  - Please allow up to 2 working days plus regular postal delivery time <br/>
+<b>* Priority</b> - Processed within 24 hours of receipt plus priority postal delivery time
+</p>
+
+<div class="inputArea">
+<div class="titleName">Date Of Marriage</div>
+<input class="value" type="date" name="date"/><br/>
+</div>
+<div class="inputArea">
+<div class="titleName">Place of marriage in Australia</div>
+<input class="value" type="text" placeholder="Suburb / Town" name="placeOfMarriage"/><br/>
+</div>
+<br/>
+<div>
+    <div class="inputArea">
+        <div class="partySurName">Party 1’s surname</div>
+        <input class="partySurValue" type="text" placeholder="Party 1’s surname" name="Party1Surname"/>
+        <div class="MaidenSurName">Maiden surname if different </div>
+        <input class="MaidenSurNameValue" type="text" placeholder="Maiden surname if different" name="party1MaidenSurName"/><br/>
+        <div class="partyGivenName">Party 1’s given name(s) </div>
+        <input class="partyGivenValue" type="text" placeholder="Party 1’s given name(s)" name="party1GivenName"/><br/>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+    <div class="inputArea">
+        <div class="partySurName">Party 2’s surname</div>
+        <input class="partySurValue" type="text" placeholder="Party 2’s surname" name="Party2Surname"/>
+        <div class="MaidenSurName">Maiden surname if different </div>
+        <input class="MaidenSurNameValue" type="text" placeholder="Maiden surname if different" name="party2MaidenSurName"/><br/>
+        <div class="partyGivenName">Party 2’s given name(s) </div>
+        <input class="partyGivenValue" type="text" placeholder="Party 2’s given name(s)" name="party2GivenName"/><br/>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<h2>Applicant</h2>
+<div class="inputArea">
+<div class="titleName">Full name</div>
+<input class="value" type="text" placeholder="Full name" name="fullName"/><br/>
+</div>
+
+<div class="inputAddressArea">
+<div class="PostalAddress">Postal address</div>
+<div class="addressValue">
+    <input class="postalAddressValue" type="text" placeholder="Address" name="address"/><br/>
+    <input class="PostalAddressCity" type="text" placeholder="Suburb / Town" name="suburb"/>
+    <input class="PostalAddressCity" type="text" placeholder="State" name="state"/>
+    <input class="PostalAddressCity" type="text" placeholder="PostCode" name="postCode"/>
+</div>
+</div>
+<div class="inputArea">
+    <div class="partySurName">Your <b>Relationship</b> to the person
+</div>
+        <input class="partySurValue" type="text" placeholder="e.g. self, spouse" name="relationShipToThePerson"/>
+        <div class="MaidenSurName">Daytime phone number </div>
+        <input class="MaidenSurNameValue" type="text" placeholder="Phone Number" name="phoneNumber"/><br/>
+        
+</div>
+<div class="inputArea">
+<div class="titleName">Email address</div>
+<input class="value" type="text" placeholder="Email Address" name="email"/><br/>
+</div>
+
+<div class="reasonArea">
+<div class="reasonName">Reason required</div>
+<div class="reasonValue">
+    <span class="reason"><label class="label">Passport</label><input class="check" type="checkbox" placeholder="" name="passport"/></span>
+    <span class="reason"><label class="label">Family history</label><input class="check" type="checkbox" placeholder="" name="familyHistoru"/></span>
+    <span class="reason"><label class="label">Divorce</label><input class="check" type="checkbox" placeholder="" name="divorce"/></span>
+    <span class="reason"><label class="label">Bank requirements</label><input class="check" type="checkbox" placeholder="" name="bankRequirment"/></span>
+    <span class="reason"><label class="label">Legal </label><input class="check" type="checkbox" placeholder="" name="legal"/></span>
+    <span class="reason"><label class="label">Lost</label><input class="check" type="checkbox" placeholder="" name="lost"/></span>
+    <span class="reason"><label class="label">Estate</label><input class="check" type="checkbox" placeholder="" name="estate"/></span>
+    <span class="reason"><label class="label">Property settlement</label><input class="check" type="checkbox" placeholder="" name="propertySettlement"/></span>
+    <p>Others <input class="otherReason" type="text" placeholder="Other Reason............................."</p>
+</div>
+    <p class="instruction"><b>Declaration: </b>I declare that the information I have provided is true and correct. By signing this application I consent to my information being checked
+with the document issuer or official record holder.
+</p>
+<div class="signature">Signature Of Applicant:</div>
+
+
+</body>
+</html>

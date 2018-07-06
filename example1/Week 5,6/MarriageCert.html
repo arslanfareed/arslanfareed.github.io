@@ -1,0 +1,484 @@
+<!--
+ID:19188629
+Name:Abdul Rafay
+Practical Time: Thursday(1:00PM - 3:00 PM)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marriage Certificate</title>
+  <link rel="stylesheet" href="MarriageCert.css">
+  <link type="text/javascript" href="formValidation.js"/>
+</head>
+<body>
+<h2> MARRIAGE CERTIFICATE APPLICATION FORM </h2>
+<h4>Payment details over the page - you MUST return pages 1 and 2 if applying via mail </h4>
+
+<form method="post" action="
+http://tl28serv.westernsydney.edu.au/twainfo/form.asp" onsubmit="return validation()" >
+<div>
+    <div class="instruction">Fees subject to change without notice</div>
+    <div class="items">
+    <div class="item1">
+        <div class="input"><input class="check0" type="checkbox" name="marriageCertificate"/> </div>
+        <div class="title"><b>MARRIAGE CERTIFICATE</b></div>
+        <div class="cost"><b>$49.00</b></div>
+        <div class="titleInstruction">(Fees include regular postal delivery. If Registered Post or Express Post is
+required, please enclose a self-addressed Registered or Express Post envelope)
+    </div>
+        
+    </div>
+    <div class="item1">
+        <div class="input"><input class="check0" type="checkbox" name="priorityFee"/> </div>
+        <div class="title"><b>PRIORITY FEE *</b></div>
+        <div class="cost"><b>$34.00</b></div>
+        <div class="titleInstruction">(Payable in addition to Marriage Certificate fee & includes priority postal delivery.
+            <b>Does not</b> include Registered Post or Express Post – see exception above).
+    </div>
+    </div>
+    <div class="item1">
+        <div class="input"><input class="check0" type="checkbox" name="marriageCertificateReduceFee"/> </div>
+        <div class="title"><b>MARRIAGE CERTIFICATE</b> (Reduced fee)</div>
+        <div class="cost"><b>$35.00</b></div>
+        <div class="titleInstruction">(Only applies for marriages more than 75 years old. Otherwise full fee applies)
+    </div>
+    </div>
+    </div>
+    <div class="instruction">* Priority fee is payable for 24 hour processing if applying via mail or certain Regional Courthouses. Does not include postage delivery time.
+See Locations & Links webpage. For eligibility see the Marriage certificate access policy on the Marriages webpage.</div>
+
+
+<h2>Identification and Certificate Access Requirements</h2>
+<p>See page 2 or visit www.bdm.justice.wa.gov.au</p>
+
+<h2>Processing Times for Mailed Certificate Applications</h2>
+<p> <b>Standard </b>  - Please allow up to 2 working days plus regular postal delivery time <br/>
+<b>* Priority</b> - Processed within 24 hours of receipt plus priority postal delivery time
+</p>
+
+<div class="inputArea">
+    <div class="titleName">Date Of Marriage <span class="required"><b>*</b></span></div>
+<input class="value" type="date" name="date"/><br/>
+</div>
+<div class="inputArea">
+<div class="titleName">Place of marriage in Australia <span class="required"><b>*</b></span></div>
+<input class="value" type="text" placeholder="Suburb / Town" name="placeOfMarriage" /><br/>
+</div>
+<br/>
+<div>
+    <div class="validation1" name="validation1"></div>
+    <div class="inputArea">
+        <div class="partySurName">Party 1’s surname <span class="required"><b>*</b></span></div>
+        <input class="partySurValue" type="text" placeholder="Party 1’s surname" name="Party1Surname" oninput="surnameValidation()" value=""/>
+        <div class="MaidenSurName">Maiden surname if different </div>
+        <input class="MaidenSurNameValue" type="text" placeholder="Maiden surname if different" oninput="maidNameValidation()" name="party1MaidenSurName"/><br/>
+        <div class="partyGivenName">Party 1’s given name(s) <span class="required"><b>*</b></span> </div>
+        <input class="partyGivenValue" type="text" placeholder="Party 1’s given name(s)" oninput="givenNameValidation()" name="party1GivenName" /><br/>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<div>
+    <div class="inputArea">
+        <div class="partySurName">Party 2’s surname</div>
+        <input class="partySurValue" type="text" placeholder="Party 2’s surname" name="Party2Surname"/>
+        <div class="MaidenSurName">Maiden surname if different </div>
+        <input class="MaidenSurNameValue" type="text" placeholder="Maiden surname if different" name="party2MaidenSurName"/><br/>
+        <div class="partyGivenName">Party 2’s given name(s) </div>
+        <input class="partyGivenValue" type="text" placeholder="Party 2’s given name(s)" name="party2GivenName"/><br/>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<div class="validation2" name="validation2"></div>
+<h2>Applicant</h2>
+
+<div class="inputArea">
+<div class="titleName">Full name</div>
+<input class="value" type="text" placeholder="Full name" name="fullName"/><br/>
+</div>
+
+
+<div class="inputAddressArea">
+<div class="PostalAddress">Postal address</div>
+<div class="addressValue">
+    <input class="postalAddressValue" type="text" placeholder="Address" oninput="addressValidation()" name="address"/><br/>
+    <input class="PostalAddressCity" type="text" placeholder="Suburb / Town" oninput="suburbValidation()" name="suburb"/>
+    <select class="PostalAddressCity" name="state" >
+        <option value="Choose State">Choose State <span class="required"><b>*</b></span></option>
+        <option value="New South Wales">New South Wales</option>
+        <option value="Queensland">Queensland</option>
+        <option value="South Australia">South Australia</option>
+        <option value="Tasmania">Tasmania</option>
+        <option value="Victoria">Victoria</option>
+        <option value="Western Australia">Western Australia</option>
+        <option value="Australian Capital Territory">Australian Capital Territory</option>
+        <option value="Jervis Bay Territory">Jervis Bay Territory</option>
+        <option value="Northern Territory">Northern Territory</option>
+        <option value="Ashmore and Cartier Islands">Ashmore and Cartier Islands</option>
+        <option value="Australian Antarctic Territory">Australian Antarctic Territory</option>
+        <option value="Christmas Island">Christmas Island</option>
+        <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+        <option value="Coral Sea Islands">Coral Sea Islands</option>
+        <option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+        <option value="Norfolk Island">Norfolk Island</option>
+    </select>
+    <input class="PostalAddressCity" type="number" placeholder="PostCode" oninput="postCodeValidation()" name="postCode"/>
+</div>
+</div>
+<div class="inputArea">
+    <div class="partySurName">Your <b>Relationship</b> to the person
+</div>
+        <input class="partySurValue" type="text" placeholder="e.g. self, spouse" name="relationShipToThePerson"/>
+        <div class="MaidenSurName">Daytime phone number </div>
+        <input class="MaidenSurNameValue" type="number" placeholder="Phone Number" oninput="phoneNumberValidation()" name="phoneNumber"/><br/>
+        
+</div>
+<div class="inputArea">
+<div class="titleName">Email address</div>
+<input class="value" type="email" placeholder="Email Address" name="email"/><br/>
+</div>
+
+<div class="reasonArea">
+<div class="reasonName">Reason <span class="required"><b>*</b></span></div>
+<div class="reasonValue">
+    <span class="reason"><label class="label">Passport</label><input class="check" type="radio" placeholder="" name="reason" value="passport"/></span>
+    <span class="reason"><label class="label">Family history</label><input class="check" type="radio" placeholder="" name="reason" value="familyHistory" /></span>
+    <span class="reason"><label class="label">Divorce</label><input class="check" type="radio" placeholder="" name="reason" value="divorce"/></span>
+    <span class="reason"><label class="label">Bank requirements</label><input class="check" type="radio" placeholder="" name="reason" value="bankRequirment"/></span>
+    <span class="reason"><label class="label">Legal </label><input class="check" type="radio" placeholder="" name="reason" value="legal"/></span>
+    <span class="reason"><label class="label">Lost</label><input class="check" type="radio" placeholder="" name="reason" value="lost"/></span>
+    <span class="reason"><label class="label">Estate</label><input class="check" type="radio" placeholder="" name="reason" name="estate" value="estate"/></span>
+    <span class="reason"><label class="label">Property settlement</label><input class="check" type="radio" placeholder="" name="reason" value="propertySettlement"/></span>
+    <p>Others <input class="otherReason" type="text" name="other"  placeholder="Other Reason............................."</p>
+</div>
+    <p class="instruction"><b>Declaration: </b>I declare that the information I have provided is true and correct. By signing this application I consent to my information being checked
+with the document issuer or official record holder.
+</p>
+<div class="signature"><input class="check" type="checkbox" name="decelaration" onclick="reasonValidation()" value="agree"/> <span class="required"><b>*</b></span> I declare that the information I have provided is true and correct. By signing this application I consent to my information being checked
+with the document issuer or official record holder.</div>
+</div>
+</div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <input class="submit" type="submit" name="submit" value="submit" onclick="reasonValidation()" />
+</form>
+
+<script>
+   
+   function validation(){
+    var date = document.getElementsByName("date").item(0).value;
+    var placeOfMarriage =document.getElementsByName("placeOfMarriage").item(0).value  ;
+    var surName1 = document.getElementsByName("Party1Surname").item(0).value;
+    var givenName1 = document.getElementsByName("party1GivenName").item(0).value;
+    var maidenNameSurName1 = document.getElementsByName("party1MaidenSurName").item(0).value;
+    var surName2 = document.getElementsByName("Party2Surname").item(0).value;
+    var givenName2 = document.getElementsByName("party2GivenName").item(0).value;
+    var maidenNameSurName2 = document.getElementsByName("party2MaidenSurName").item(0).value;
+    var fullName  = document.getElementsByName("fullName").item(0).value;
+    var postalAddress = document.getElementsByName("address").item(0).value;
+    var suburb = document.getElementsByName("suburb").item(0).value;
+    var state = document.getElementsByName("state").item(0).value;
+    var postCode = document.getElementsByName("postCode").item(0).value;
+    var relationship = document.getElementsByName("relationShipToThePerson").item(0).value;
+    var phoneNumber = document.getElementsByName("phoneNumber").item(0).value;
+    var email = document.getElementsByName("email").item(0).value;
+    var reason = document.getElementsByName("reason");
+    for(a=0; a< reason.length; a++)
+    {   
+        if(reason.item(a).checked)
+        {
+            reason = document.getElementsByName("reason").item(a);
+        }
+    }
+    
+    var reasonOther = document.getElementsByName("other").item(0).value;
+    var declearation;
+    var declearation = document.getElementsByName("decelaration").item(0).value;
+    
+    //var reg1= /\d\W/;    
+    var reg1 = /(\W|\d)/g;
+    var reg2 = /[!@#$%^&*()_+=|}{:"\?><\][';/.,`~	/.]/g;
+    
+         
+        /*
+        if(surName1.search(reg1) !== -1)
+        {
+            var validation1 = document.getElementsByName("validation1").item(0).innerHTML += "<br/><b>Party 1’s surname: </b>Please Enter alphabetic characters Only";
+            return false;
+            
+        }
+        else
+        {
+            var validation1 = document.getElementsByName("validation1").item(0).innerHTML = "";
+        }
+        
+        if(givenName1.search(reg1) !== -1)
+        {
+            var validation1 = document.getElementsByName("validation1").item(0).innerHTML += "<br/><b>Party 1’s given name(s): </b>Please Enter alphabetic characters Only";
+            return false;
+        }
+        else
+        {
+            var validation1 = document.getElementsByName("validation1").item(0).innerHTML = "";
+        }
+        
+        if(maidenNameSurName1.search(reg1) !== -1)
+        {   
+            var validation1 = document.getElementsByName("validation1").item(0).innerHTML += "<br/><b>Maiden surname if different(s): </b>Please Enter alphabetic characters Only";
+            return false;
+        }
+        else
+        {
+            var validation1 = document.getElementsByName("validation1").item(0).innerHTML = "";
+        }
+        
+        if(postalAddress.search(reg2) != -1)
+        {
+            
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>Address: </b>Please Enter Number, alphabetic, space [ ], hyphen [-], and slash [/] characters only";
+            return false;
+        }
+        
+        if(suburb.search(reg1) != -1)
+        {
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>Suburb / Town: </b>Please Enter Alphabetic characters only";
+            return false;
+        }
+        
+        if(state == "Choose State")
+        {
+            return false;
+        }
+        
+        if(postCode.length < 4 || postCode.length > 4)
+        {
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>PostCode: </b>4 Numeric Digits Only ";
+            return false;
+        }
+        
+        if(phoneNumber.length < 8 || phoneNumber.length > 10 || phoneNumber.length == 9)
+        {
+            
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>Phone Number: </b>8 or 10 numeric digits Only ";
+            return false;
+        }
+        
+       */
+      var declearation1 = document.getElementsByName("decelaration").item(0);
+      if(declearation1.checked){
+          return true;
+      }
+      {
+          var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>Declearation: </b>Agree Terms And Condition ";
+          var validation2 = document.getElementsByName("validation2").item(0).style.display = "block";
+          return false
+      }
+        
+        
+    }
+    
+    
+    function surnameValidation(){
+    var surName1 = document.getElementsByName("Party1Surname").item(0).value;   
+    var reg1 = /(\W|\d)/g;
+    var reg2 = /[!@#$%^&*()_+=|}{:"\?><\][';/.,`~	/.]/g;
+    var validation1 = document.getElementsByName("validation1").item(0);     
+        if(surName1.search(reg1) !== -1)
+        {
+            validation1.style.display = "block";
+            validation1.innerHTML = "<b>Party 1’s surname: </b>Please Enter alphabetic characters Only";   
+        }
+        else
+        {
+            validation1.innerHTML = "";
+            validation1.style.display = "none";
+        }
+    }
+    
+    function givenNameValidation()
+    {
+        var givenName1 = document.getElementsByName("party1GivenName").item(0).value;
+        var reg1 = /(\W|\d)/g;
+        var validation1 = document.getElementsByName("validation1").item(0); 
+        if(givenName1.search(reg1) !== -1)
+        {
+            validation1.style.display = "block";
+            validation1.innerHTML = "<b>Party 1’s given name(s) </b>Please Enter alphabetic characters Only";   
+        }
+        else
+        {
+            validation1.innerHTML = "";
+            validation1.style.display = "none";
+        }
+    }
+    
+    function maidNameValidation()
+    {
+        var maidenNameSurName1 = document.getElementsByName("party1MaidenSurName").item(0).value;
+        var reg1 = /(\W|\d)/g;
+        var validation1 = document.getElementsByName("validation1").item(0); 
+       if(maidenNameSurName1.search(reg1) !== -1)
+        {   
+            validation1.style.display = "block";
+            validation1.innerHTML = "<b>Party 1’s given name(s) </b>Please Enter alphabetic characters Only";   
+        }
+        else
+        {
+            validation1.innerHTML = "";
+            validation1.style.display = "none";
+        }
+    }
+    
+        function addressValidation()
+    {
+        var postalAddress = document.getElementsByName("address").item(0).value;
+        var reg2 = /[!@#$%^&*()_+=|}{:"\?><\][';/.,`~	/.]/g;
+        var validation2 = document.getElementsByName("validation2").item(0); 
+       if(postalAddress.search(reg2) != -1)
+        {  
+            validation2.style.display = "block";
+            validation2.innerHTML  = "<b>Address: </b>Please Enter Number, alphabetic, space [ ], hyphen [-], and slash [/] characters only";   
+        }
+        else
+        {
+            validation2.innerHTML = "";
+            validation2.style.display = "none";
+        }
+    }
+    
+     function suburbValidation()
+    {
+       var suburb = document.getElementsByName("suburb").item(0).value;
+        var reg1 = /(\W|\d)/g;
+        var validation2 = document.getElementsByName("validation2").item(0); 
+        if(suburb.search(reg1) != -1)
+        {
+            validation2.style.display = "block";
+            validation2.innerHTML  = "<b>Suburb / Town: </b>Please Enter Alphabetic characters only";   
+        }
+        else
+        {
+            validation2.innerHTML = "";
+            validation2.style.display = "none";
+        }
+    }
+    
+    function postCodeValidation()
+    {
+       var postCode = document.getElementsByName("postCode").item(0).value;
+       var validation2 = document.getElementsByName("validation2").item(0); 
+       
+        if(postCode.length < 4 || postCode.length > 4)
+        {
+            validation2.style.display = "block";
+            validation2.innerHTML  = "<b>PostCode: </b>Please Enter 4 numeric digits Only";   
+        }
+        else
+        {
+            validation2.innerHTML = "";
+            validation2.style.display = "none";
+        } 
+    }
+    
+    function phoneNumberValidation()
+    {
+       var phoneNumber = document.getElementsByName("phoneNumber").item(0).value;
+       var validation2 = document.getElementsByName("validation2").item(0); 
+       
+        if(phoneNumber.length < 8 || phoneNumber.length > 10 || phoneNumber.length == 9)
+        {
+            validation2.style.display = "block";
+            validation2.innerHTML  = "<b>Phone Number: </b>Please Enter 8 or 10 numeric digits Only";   
+        }
+        else
+        {
+            validation2.innerHTML = "";
+            validation2.style.display = "none";
+        } 
+    }
+    
+    function reasonValidation(){
+        
+    var date = document.getElementsByName("date").item(0).value;
+    var placeOfMarriage =document.getElementsByName("placeOfMarriage").item(0).value  ;
+    var surName1 = document.getElementsByName("Party1Surname").item(0).value;
+    var givenName1 = document.getElementsByName("party1GivenName").item(0).value;
+    var maidenNameSurName1 = document.getElementsByName("party1MaidenSurName").item(0).value;
+    var surName2 = document.getElementsByName("Party2Surname").item(0).value;
+    var givenName2 = document.getElementsByName("party2GivenName").item(0).value;
+    var maidenNameSurName2 = document.getElementsByName("party2MaidenSurName").item(0).value;
+    var fullName  = document.getElementsByName("fullName").item(0).value;
+    var postalAddress = document.getElementsByName("address").item(0).value;
+    var suburb = document.getElementsByName("suburb").item(0).value;
+    var state = document.getElementsByName("state").item(0).value;
+    var postCode = document.getElementsByName("postCode").item(0).value;
+    var relationship = document.getElementsByName("relationShipToThePerson").item(0).value;
+    var phoneNumber = document.getElementsByName("phoneNumber").item(0).value;
+    var email = document.getElementsByName("email").item(0).value;
+    var reason = document.getElementsByName("reason");
+    for(a=0; a< reason.length; a++)
+    {   
+        if(reason.item(a).checked)
+        {
+            reason = document.getElementsByName("reason").item(a);
+        }
+    }
+    
+    var reasonOther = document.getElementsByName("other").item(0).value;
+
+        
+        if(!reason.checked  && reasonOther == "")
+        {
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML = "";
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>Reason: </b>Please Select Max of 1 Reason or otherwise fill the other Field ";
+            var validation2 = document.getElementsByName("validation2").item(0).style.display = "block";
+            var declearation = document.getElementsByName("decelaration").item(0).checked = false;
+        }
+                
+        else if(reason.checked  && reasonOther !== "")
+        {
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML = "";
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML += "<br/><b>Reason: </b>You Can Only Select Either Max of 1 Reason or Fill in the <b>Other</b> Field ";
+            var validation2 = document.getElementsByName("validation2").item(0).style.display = "block";
+            var declearation = document.getElementsByName("decelaration").item(0).checked = false;
+        }
+        
+        else
+        {
+            var validation2 = document.getElementsByName("validation2").item(0).innerHTML = "";
+            var validation2 = document.getElementsByName("validation2").item(0).style.display = "none";
+           // var declearation = document.getElementsByName("decelaration").item(0).checked = true;
+        }
+        
+if( date == "" || placeOfMarriage == "" || surName1 == "" || givenName1 =="" || (!reason.checked && reasonOther == "") )
+{
+        
+        var validation1 = document.getElementsByName("validation1").item(0);    
+        validation1.style.display = "block";
+        validation1.innerHTML = "Please Fill The Required Fields";
+        var declearation = document.getElementsByName("decelaration").item(0).checked = false;
+        return false
+}
+else
+        {
+            var validation1 = document.getElementsByName("validation1").item(0);
+            validation1.innerHTML = "";
+            validation1.style.display = "none";
+        }
+        
+    }
+    
+    
+    
+</script>
+</body>
+</html>

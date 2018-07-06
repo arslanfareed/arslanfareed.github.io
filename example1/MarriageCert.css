@@ -1,0 +1,108 @@
+/*
+ID:19188629
+Name:Abdul Rafay
+Practical Time: Thursday(1:00PM - 3:00 PM)
+*/
+* /*{
+    padding:0;
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+form {
+    padding:20px;
+}
+
+form div {
+    margin-top:10px;
+}
+
+label {
+    display:inline-block;
+}
+
+input {
+    border-radius:5px;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="text"], input[type="number"], input[type="submit"], select {
+    height:25px;
+    font-size:1em;
+    padding:4px;
+    width:95%;
+    border:1px solid #ccc;
+}
+
+ input[type="submit"] {
+    padding:10px;
+    height:inherit;
+    background-color:#7db54a;
+    width:100%;
+ }
+
+select {
+    height:33px;
+}
+
+@media screen and (min-width:420px) {
+    input[type="text"], input[type="number"], input[type="submit"], select {
+        width:200px;
+    }
+    label {
+        width:150px;
+    }
+    .radioAndCheckBoxLabel {
+        width:inherit;
+    }
+
+}
+h3{
+    color:#FF0000;
+}
+*/
+body{width:80%; margin: auto}
+p{ font-weight: normal}
+.instruction{ width: 100%; height:auto; font-size:12px; border: black solid thin}
+.items{ width: 100%; height: auto; border: black solid thin; padding: 10px; box-sizing: border-box}
+.item1{ width: 100%; height: 30px;  position: relative; padding: 5px; }
+.input{ width: 5%; height: auto; float: left}
+.check0{ width: 25px; height: 25px; margin-left: }
+.title { width: 40%; height: auto; float: left}
+.cost { width: 5%; height: auto ;float: left}
+.titleInstruction {width: 50%; height: auto; float: left; font-size: 12px; }
+
+.item2{ width: 500px; border: black solid thin;}
+
+.inputArea{width: 100%; height: 40px; border: black solid thin; box-sizing: border-box; }
+.titleName{ width: 20%; height: 40px; font-size: 13px; border: black solid thin; float: left; padding-top:10px; padding-left: 10px;  box-sizing: border-box }
+.value{ width: 80%; height: 40px;border: black solid thin; float: left; padding-top:10px; padding-left: 10px; box-sizing: border-box }
+
+.partySurName{ width: 20%; height: 40px;font-size: 13px; border: black solid thin; float: left; padding-top:10px; padding-left: 10px;  box-sizing: border-box }
+.partySurValue{ width: 35%; height: 40px;border: black solid thin; float: left; padding-top:10px; padding-left: 10px; box-sizing: border-box }
+
+.MaidenSurName{ width: 15%; height: 40px; font-size: 12px; border: black solid thin; float: left; padding-top:10px; padding-left: 10px;  box-sizing: border-box }
+.MaidenSurNameValue{ width: 30%; height: 40px;border: black solid thin; float: left; padding-top:10px; padding-left: 10px; box-sizing: border-box }
+
+.partyGivenName{ width: 20%; height: 40px; font-size: 13px; border: black solid thin; float: left; padding-top:10px; padding-left: 10px;  box-sizing: border-box }
+.partyGivenValue{ width: 80%; height: 40px;border: black solid thin; float: left; padding-top:10px; padding-left: 10px; box-sizing: border-box }
+
+.inputAddressArea{width: 100%; height: 80px; border: black solid thin; box-sizing: border-box; }
+.PostalAddress{ width: 20%; height: 80px; border: black solid thin; float: left; padding-top:10px; padding-left: 10px;  box-sizing: border-box }
+.addressValue{ width: 80%; float: left; box-sizing: border-box}
+.postalAddressValue{ width: 100%; height: 40px;border: black solid thin; float: left; padding-top:10px; padding-left: 10px; box-sizing: border-box }
+.PostalAddressCity{ width: 33.3%; height: 40px;border: black solid thin; float: left; padding-top:10px; padding-left: 10px; box-sizing: border-box }
+
+.reasonArea{width: 100%; height: 80px; border: black solid thin; box-sizing: border-box; }
+.reasonName{width:20% ; height: 80px; padding: 5px; border: black solid thin; float: left; padding-top:10px; padding-left: 10px;  box-sizing: border-box }
+.reasonValue{ width: 80%; height:80px; border:black solid thin;  float: left; box-sizing: border-box}
+.reason{width: 25%; height: 30px; border: black solid thin; text-align: right; padding: 0px; padding-left: 0px; float: left; box-sizing: border-box}
+.label{ line-height: 20px; vertical-align: super;}
+.check{ width: 25px; height: 25px; margin-left: 30px}
+.otherReason{ width:80%; height: 12px }
+.signature{ width: 100%; height: 50px; border: solid thin black; box-sizing: border-box; padding: 10px; font-size: 25px}
